@@ -11,7 +11,6 @@
     "migrate:production": "heroku run npm run migrate",
     "db:seed": "psql -U noteful -d noteful -f ./seeds/seed.notes_and_folders.sql",
     "start": "node src/server.js",
-    "predeploy": "npm audit",
     "deploy": "git push heroku main",
     "postdeploy": "npm run migrate:production"
   },
